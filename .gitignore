@@ -6,7 +6,7 @@
 import java.util.scanner*;
 import java.lang.*;
 
-public class solution
+public class Excerise 06
 {
    public static void main(String[] args)
    {
