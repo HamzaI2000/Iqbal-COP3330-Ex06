@@ -3,11 +3,10 @@
  *  Copyright 2021 Hamza Iqbal
  */
  
-import java.util.scanner*;
-import java.lang.*;
+import java.util.scanner;
 
-public class Excerise 06
-{
+public class main {
+
    public static void main(String args)
    {
        Scanner in = new Scanner(System.in);   
