@@ -1,23 +1,31 @@
-# Compiled class file
-*.class
+/*
+ *  UCF COP3330 Fall 2021 Assignment 6 Solution
+ *  Copyright 2021 Hamza Iqbal
+ */
+ 
+import java.util.scanner*;
+import java.lang.*;
 
-# Log file
-*.log
+public class solution
+{
+   public static void main(String[] args)
+   {
+       Scanner in = new Scanner(System.in);   
 
-# BlueJ files
-*.ctxt
+       int current_year = Calendar.getInstance().get(Calendar.YEAR);
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+       System.out.print("What is your age currently? ");  
+       int age = in.nextInt();
+      
+       System.out.print("At what age do you want to retire? ");      
+       int retire_age = in.nextInt();      
+      
+       int years_left = retire_age - age;             
+       System.out.println("You'll have " + years_left + " years left until you can retire."); 
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+       int retire_year = current_year + years_left;    
+       System.out.println("It is " + current_year +", therefore you can retire in " + retire_year + ".");
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+   }
+
+}
